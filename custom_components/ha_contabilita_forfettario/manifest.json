@@ -1,0 +1,9 @@
+{
+  "domain": "ha_contabilita_forfettario",
+  "name": "HA Contabilità Forfettario",
+  "version": "0.1.0",
+  "documentation": "https://github.com/P1pp89/ha-contabilita-forfettario",
+  "requirements": [],
+  "dependencies": [],
+  "codeowners": ["@P1pp89"]
+}
