@@ -60,13 +60,16 @@ Installazione Manuale
 - Nel file configuration.yaml aggiungi se non presente:
 
 homeassistant:
+
   packages:
+  
     contabilita_forfettario: !include contabilita_forfettario.yaml
 
 - Riavvia Home Assistant
 
 
 Disclaimer
+
 Questo progetto è uno strumento di supporto.
 Non sostituisce un commercialista.
 I calcoli sono indicativi e basati su regole generali del regime forfettario italiano.
@@ -74,4 +77,5 @@ I calcoli sono indicativi e basati su regole generali del regime forfettario ita
 🤝 Contributi
 
 Pull Request e suggerimenti sono benvenuti.
+
 Il progetto nasce da un’esigenza reale e cresce con l’esperienza sul campo.
