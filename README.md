@@ -44,7 +44,9 @@ Step 2
 Nel file configuration.yaml aggiungi se non presente:
 
 homeassistant:
+
   packages:
+  
     contabilita_forfettario: !include contabilita_forfettario.yaml
 
 
@@ -79,3 +81,4 @@ I calcoli sono indicativi e basati su regole generali del regime forfettario ita
 Pull Request e suggerimenti sono benvenuti.
 
 Il progetto nasce da un’esigenza reale e cresce con l’esperienza sul campo.
+
