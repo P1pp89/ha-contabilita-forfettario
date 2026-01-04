@@ -1,34 +1,73 @@
-# Home Assistant Partita IVA
+# 📊 Home Assistant – Contabilità Forfettario (Italia)
 
-📊 Package per la gestione contabile di Partita IVA in Home Assistant.  
+Questo repository fornisce un **Home Assistant Package YAML** per la gestione e la simulazione
+della **contabilità in regime forfettario italiano**.
 
-Gestisce automaticamente:  
-- Calcolo reddito forfettario  
-- Contributi INPS  
-- Imposta sostitutiva secondo aliquota attuale (5% primi 5 anni, 15% dopo)  
-- Utile netto stimato  
-- Utility Meter per ricavi annui e anno precedente  
+⚠️ **NON è un’integrazione Home Assistant**
+- Non compare in *Impostazioni → Integrazioni*
+- Non si aggiunge tramite UI
+- Non usa `manifest.json` o file `.py`
+
+È una scelta voluta per garantire:
+- trasparenza totale dei calcoli
+- massima personalizzazione
+- nessuna “magia” nascosta
 
 ---
 
-## Installazione
+## ✨ Funzionalità
 
-### Con HACS (consigliato)
+- Calcolo **Reddito Forfettario**
+- Calcolo **Contributi INPS**
+- Calcolo **Imposta Sostitutiva**
+- Gestione aliquota **5% / 15%** in base all’anno di inizio attività
+- Stima **Utile Netto**
+- Supporto a **dati anno precedente**
+- Compatibile con **Utility Meter**
+- Pronto per dashboard, grafici ed export dati nel futuro aggiornamento
 
-1. Vai in **HACS → Custom repositories**  
-2. Inserisci l’URL del repository: `https://github.com/P1pp89/ha-contabilita-forfettario 
-3. Tipo: **Integration**  
-4. Installa il package direttamente da HACS  
-5. Riavvia Home Assistant
+---
 
-### Manuale
+Installazione tramite HACS (consigliato)
 
-1. Copia la cartella `packages/` nel tuo percorso `homeassistant/` di Home Assistant  
-2. Aggiungi al `configuration.yaml` se non presente:
+Step 1
 
-le righe:
+- Apri HACS
+- Vai su Impostazioni → Repository personalizzati
+- Aggiungi: https://github.com/P1pp89/ha-contabilita-forfettario
+- Categoria: YAML
+- Conferma e scarica il repository
+⚠️ HACS scarica i file, ma non li attiva automaticamente.
+
+
+Step 2
+Nel file configuration.yaml aggiungi se non presente:
 
 homeassistant:
   packages: !include_dir_named packages
 
-3. Riavvia Home Assistant
+Step 3
+Riavvia Home Assistant per trovare le entità.
+
+
+Installazione Manuale
+
+- Copia la cartella packages/ nel tuo percorso homeassistant/ di Home Assistant
+
+- Nel file configuration.yaml aggiungi se non presente:
+
+homeassistant:
+  packages: !include_dir_named packages
+
+- Riavvia Home Assistant
+
+
+Disclaimer
+Questo progetto è uno strumento di supporto.
+Non sostituisce un commercialista.
+I calcoli sono indicativi e basati su regole generali del regime forfettario italiano.
+
+🤝 Contributi
+
+Pull Request e suggerimenti sono benvenuti.
+Il progetto nasce da un’esigenza reale e cresce con l’esperienza sul campo.
