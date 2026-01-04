@@ -44,7 +44,9 @@ Step 2
 Nel file configuration.yaml aggiungi se non presente:
 
 homeassistant:
-  packages: !include_dir_named packages
+  packages:
+    contabilita_forfettario: !include custom_components/ha_contabilita_forfettario/contabilita_forfettario.yaml
+
 
 Step 3
 Riavvia Home Assistant per trovare le entità.
@@ -57,7 +59,8 @@ Installazione Manuale
 - Nel file configuration.yaml aggiungi se non presente:
 
 homeassistant:
-  packages: !include_dir_named packages
+  packages:
+    contabilita_forfettario: !include custom_components/ha_contabilita_forfettario/contabilita_forfettario.yaml
 
 - Riavvia Home Assistant
 
