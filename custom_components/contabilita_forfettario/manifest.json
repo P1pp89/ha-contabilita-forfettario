@@ -1,9 +1,0 @@
-{
-  "domain": "contabilita_forfettario",
-  "name": "Contabilità Forfettario",
-  "version": "1.0.8",
-  "documentation": "https://github.com/P1pp89/ha-contabilita-forfettario",
-  "issue_tracker": "https://github.com/P1pp89/ha-contabilita-forfettario/issues",
-  "codeowners": ["@P1pp89"],
-  "iot_class": "local_push"
-}
