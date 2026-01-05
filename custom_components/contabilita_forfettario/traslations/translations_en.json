@@ -1,0 +1,14 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Contabilità Forfettario Setup",
+        "description": "Configure your fiscal parameters",
+        "data": {
+          "anno_inizio_attivita": "Business Start Year",
+          "coefficiente_redditivita": "Profitability Coefficient"
+        }
+      }
+    }
+  }
+}

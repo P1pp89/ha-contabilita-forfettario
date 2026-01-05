@@ -1,0 +1,14 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Configurazione Contabilità Forfettario",
+        "description": "Configura i parametri fiscali",
+        "data": {
+          "anno_inizio_attivita": "Anno Inizio Attività",
+          "coefficiente_redditivita": "Coefficiente Redditività"
+        }
+      }
+    }
+  }
+}
