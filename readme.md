@@ -1,6 +1,6 @@
 # Contabilità Forfettario per Home Assistant
 
-![icon](https://github.com/user-attachments/assets/f4677034-9981-4e3e-a8a1-56c4783b3164)
+![Icon](icon.png)
 
 Integrazione per gestire la contabilità del regime forfettario italiano direttamente in Home Assistant.
 
